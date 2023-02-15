@@ -1,0 +1,16 @@
+colors = ["red","yellow","blue","green","pink"]
+
+import random
+
+a = random.randint(0, 4)
+
+computer = colors[a]
+
+player = str(input("Guess the color: "))
+
+while True:
+    if computer == player:
+      print("Correct")
+      break
+    else:
+      player = str(input("Try again: "))
